@@ -23,6 +23,20 @@ Player* Tournament::run(std::array<Player*, 8> competitors){
     Player * round2[4];
     Player * round3[2];
     Player * winner;
+    p1 = 0; 
+    p2 = 0; 
+    p3 = 0; 
+    p4 = 0; 
+    p5 = 0;
+    p6 = 0;
+    p7 = 0;
+    p8 = 0;
+    p21 =0;
+    p22 = 0;
+    p23 = 0; 
+    p24 = 0; 
+    f1 = 0; 
+    f2 = 0;
     //ROUND ONE ------------------------------------------------------------
     for ( int i = 0; i < 6; i++)
     {
@@ -171,7 +185,7 @@ Player* Tournament::run(std::array<Player*, 8> competitors){
 
     }
     //ROUND 2 RESULTS
-    if (p22 > p21)
+    if (p21 < p22)
     {
         round3[0] = round2[1];
     }
@@ -180,7 +194,7 @@ Player* Tournament::run(std::array<Player*, 8> competitors){
         round3[0] = round2[0];
     }
 
-    if (p24 > p23)
+    if (p23 < p24)
     {
         round3[1] = round2[3];
     }
