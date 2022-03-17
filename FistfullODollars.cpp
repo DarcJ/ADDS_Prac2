@@ -1,11 +1,11 @@
 #include "Computer.h"
-#include "FistFullODollars.h"
-FistFullODollars::FistFullODollars()
+#include "FistfullODollars.h"
+FistfullODollars::FistfullODollars()
 {
     i = 1;
 }
 
-void FistFullODollars::makeMove(){
+void FistfullODollars::makeMove(){
     if (i > 3)
     {
         i = 1;
@@ -26,6 +26,6 @@ void FistFullODollars::makeMove(){
     
 }
 
-FistFullODollars::~FistFullODollars()
+FistfullODollars::~FistfullODollars()
 {
 }
