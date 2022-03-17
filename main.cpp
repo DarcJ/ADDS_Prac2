@@ -5,10 +5,10 @@
 #include "Avalanche.h"
 #include "Bureaucrat.h"
 #include "Crescendo.h"
-#include "FistFullODollars.h"
+#include "FistfullODollars.h"
 #include "PaperDoll.h"
 #include "RandomComputer.h"
-#include "ToolBox.h"
+#include "Toolbox.h"
 #include "Tournament.h"
 
 #include <iostream>
