@@ -1,15 +1,11 @@
 #ifndef COMPUTER_H
 #define COMPUTER_H
 
-#include <stdlib.h>
-#include <time.h>
-
-class Computer
+#include "Player.h"
+class Computer : public Player
 {
-private:
-    char choice;
 public:
     Computer();
-    char makeMove();
+    ~Computer();
 };
 #endif
