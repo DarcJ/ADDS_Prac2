@@ -45,6 +45,11 @@ Player* Tournament::run(std::array<Player*, 8> competitors){
         {
             p2++;
         }
+        else if (r11 == 'T'){
+            p1++;
+            p2++;
+
+        }
 
         Referee R12;
         r12 = R12.refGame(competitors[2], competitors[3]);
@@ -54,6 +59,10 @@ Player* Tournament::run(std::array<Player*, 8> competitors){
         }
         else if (r12 == 'L')
         {
+            p4++;
+        }
+        else if (r12 == 'T'){
+            p3++;
             p4++;
         }
 
@@ -67,6 +76,11 @@ Player* Tournament::run(std::array<Player*, 8> competitors){
         {
             p6++;
         }
+        else if (r13 == 'T'){
+            p5++;
+            p6++;
+        }
+
         Referee R14;
         r14 = R14.refGame(competitors[6], competitors[7]);
         if (r14 == 'W')
@@ -75,6 +89,10 @@ Player* Tournament::run(std::array<Player*, 8> competitors){
         }
         else if (r14 == 'L')
         {
+            p8++;
+        }
+        else if (r14 == 'T'){
+            p7++;
             p8++;
         }
     }
@@ -88,7 +106,6 @@ Player* Tournament::run(std::array<Player*, 8> competitors){
         round2[0] = competitors[0];
     }
 
-    
     if (p3 < p4)
     {
         round2[1] = competitors[3];
@@ -132,6 +149,10 @@ Player* Tournament::run(std::array<Player*, 8> competitors){
         {
             p22++;
         }
+        else if (r21 == 'T'){
+            p21++;
+            p22++;
+        }
 
         Referee R22;
         r22 = R22.refGame(round2[2], round2[3]);
@@ -141,6 +162,10 @@ Player* Tournament::run(std::array<Player*, 8> competitors){
         }
         else if (r22 == 'L')
         {
+            p24++;
+        }
+        else if (r22 == 'T'){
+            p23++;
             p24++;
         }
 
@@ -178,6 +203,10 @@ Player* Tournament::run(std::array<Player*, 8> competitors){
         }
         else if (fresult == 'L')
         {
+            f2++;
+        }
+        else if (fresult == 'T'){
+            f1++;
             f2++;
         }
 
