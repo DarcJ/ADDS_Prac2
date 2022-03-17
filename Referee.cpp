@@ -32,7 +32,6 @@ char Referee::refGame(Player* Player1, Player* Player2)
         {
             return 'L';
         }  
-        return 'A';
     }
     else if (p1Choice == 'S')
     {
@@ -44,7 +43,6 @@ char Referee::refGame(Player* Player1, Player* Player2)
         {
             return 'W';
         }   
-        return 'A' ;
     }
     else if (p1Choice == 'P')
     {
@@ -56,8 +54,8 @@ char Referee::refGame(Player* Player1, Player* Player2)
         {
             return 'L';
         }   
-        return 'A'; 
     }
+    return 'A';
 }
 Referee::~Referee()
 {
