@@ -1,11 +1,11 @@
 #ifndef TOOLBOX_H
 #define TOOLBOX_H
 #include "Computer.h"
-class ToolBox : public Computer {
+class Toolbox : public Computer {
    public:
-   ToolBox();
+   Toolbox();
    void makeMove();
-   ~ToolBox();
+   ~Toolbox();
 
 };
 
