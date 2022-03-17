@@ -1,27 +1,59 @@
 #include "Referee.h"
+#include "Player.h"
 #include "Human.h"
 #include "Computer.h"
+#include "Avalanche.h"
+#include "Bureaucrat.h"
+#include "Crescendo.h"
+#include "FistFullODollars.h"
+#include "PaperDoll.h"
+#include "RandomComputer.h"
+#include "ToolBox.h"
 
 Referee::Referee()
 {
 }
-char Referee::refGame(Human Human, Computer Computer)
+char Referee::refGame(Player* Player1, Player* Player2)
 {
-    char hChoice = Human.makeMove();
-    char cChoice = Computer.makeMove();
+    p1Choice = Player1->getMove();
+    p2Choice = Player2->getMove();
 
-    if (cChoice == hChoice)
+    if (p2Choice == p1Choice)
     {
         return 'T';
     }
-    else if (hChoice == 'P')
+    else if (p1Choice == 'R')
     {
-        return 'W';
+        if (p2Choice == 'S')
+        {
+            return 'W';
+        }
+        if (p2Choice == 'P')
+        {
+            return 'L';
+        }  
     }
-    else if (hChoice == 'S')
+    else if (p1Choice == 'S')
     {
-        return 'L';
-        
+        if (p2Choice == 'R')
+        {
+            return 'L';
+        }
+        if (p2Choice == 'P')
+        {
+            return 'W';
+        }    
+    }
+    else if (p1Choice == 'P')
+    {
+        if (p2Choice == 'R')
+        {
+            return 'W';
+        }
+        if (p2Choice == 'S')
+        {
+            return 'L';
+        }    
     }
 }
 Referee::~Referee()
