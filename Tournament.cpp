@@ -180,7 +180,7 @@ Player* Tournament::run(std::array<Player*, 8> competitors){
         round3[0] = round2[0];
     }
 
-    if (p23 > p24)
+    if (p24 > p23)
     {
         round3[1] = round2[3];
     }
