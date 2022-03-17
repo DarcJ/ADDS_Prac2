@@ -1,13 +1,13 @@
 #ifndef FISTFULLODOLLARS_H
 #define FISTFULLODOLLARS_H
 #include "Computer.h"
-class FistFullODollars : public Computer{
+class FistfullODollars : public Computer{
     private:
     int i;
     public:
-    FistFullODollars();
+    FistfullODollars();
     void makeMove();
-    ~FistFullODollars();
+    ~FistfullODollars();
 
 };
 
